@@ -2,7 +2,7 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.rulers": [
         80,
@@ -26,7 +26,7 @@
     "jupyter.askForKernelRestart": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
-        "jupyter-notebook": "right"
+        "jupyter-notebook": "left"
     },
     "notebook.lineNumbers": "on",
     "python.analysis.autoFormatStrings": true,
@@ -108,5 +108,7 @@
     ],
     "python.analysis.ignore": [
         "*"
-    ]
+    ],
+    "julia.symbolCacheDownload": true,
+    "window.openFoldersInNewWindow": "off"
 }
