@@ -1,0 +1,114 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "files.autoSave": "onFocusChange",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "switch:command",
+        "stash-push:command"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "notebook.lineNumbers": "on",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": false,
+    "python.analysis.typeCheckingMode": "basic",
+    "r.bracketedPaste": true,
+    "r.plot.defaults.plotPreviewLayout": "scroll",
+    "r.rterm.linux": "/bin/radian",
+    "settingsSync.keybindingsPerPlatform": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-r>": true,
+        "<C-u>": true,
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-v>": true,
+        "<C-z>": false,
+        "<C-c>": false,
+        "<C-l>": false,
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<esc>"
+            ],
+            "before": [
+                "j",
+                "j"
+            ]
+        }
+    ],
+    "vim.leader": " ",
+    "vim.normalModeKeyBindings": [
+        {
+            "after": "<leader>yy",
+            "before": "+yy"
+        },
+        {
+            "after": "<leader>p",
+            "before": "+p"
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "after": "<leader>p",
+            "before": "\"_dP"
+        },
+    ],
+    "vim.smartRelativeLine": true,
+    "vim.useSystemClipboard": false,
+    "vscode-office.openOutline": true,
+    "vim.easymotion": true,
+    "window.restoreWindows": "all",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.inheritEnv": true,
+    "workbench.colorTheme": "Dark+ V2 Italic",
+    "terminal.external.linuxExec": "fish",
+    "editor.cursorSurroundingLines": 8,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "window.zoomLevel": -1,
+    "terminal.integrated.fontSize": 15,
+    "ruff.lint.args": [
+        "--config=/home/amti/.config/Code/User/ruff.toml"
+    ],
+    "ruff.format.args": [
+        "--config=/home/amti/.config/Code/User/ruff.toml"
+    ],
+    "python.analysis.ignore": [
+        "*"
+    ],
+    "julia.symbolCacheDownload": true,
+    "window.openFoldersInNewWindow": "off"
+}

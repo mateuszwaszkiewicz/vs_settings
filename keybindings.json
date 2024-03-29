@@ -1,0 +1,374 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+enter",
+        "command": "r.runSelection",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-r.runSelection",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "r.runSelection",
+        "when": "editorTextFocus && (editorLangId == 'rmd' || editorLangId == 'quarto') "
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-r.runSelection",
+        "when": "editorTextFocus && editorLangId == 'rmd'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "r.runSelectionRetainCursor",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-r.runSelectionRetainCursor",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "alt+,",
+        "command": "type",
+        "args": {
+            "text": "<- "
+        },
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+.",
+        "command": "type",
+        "args": {
+            "text": "%>% "
+        },
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "alt+.",
+        "command": "type",
+        "args": {
+            "text": "=>"
+        },
+        "when": "editorTextFocus && editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "extension.vim_ctrl+d"
+    },
+    {
+        "key": "space shift+h",
+        "command": "vscode-harpoon.addEditor",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space shift+j",
+        "command": "vscode-harpoon.addEditor1",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space shift+k",
+        "command": "vscode-harpoon.addEditor2",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space shift+l",
+        "command": "vscode-harpoon.addEditor3",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space shift+;",
+        "command": "vscode-harpoon.addEditor4",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space h",
+        "command": "vscode-harpoon.editorQuickPick",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space j",
+        "command": "vscode-harpoon.gotoEditor1",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space k",
+        "command": "vscode-harpoon.gotoEditor2",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space l",
+        "command": "vscode-harpoon.gotoEditor3",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "space ;",
+        "command": "vscode-harpoon.gotoEditor4",
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb && !isInEmbeddedEditor &&editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g i",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g q",
+        "command": "editor.action.quickFix",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g shift+i",
+        "command": "editor.action.peekImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g r",
+        "command": "references-view.findReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g b",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "g h",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && !isInEmbeddedEditor && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "alt+ctrl+k",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "alt+ctrl+j",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.focusRightGroup",
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.focusLeftGroup",
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "command": "runCommands",
+        "key": "pagedown",
+        "args": {
+            "commands": [
+                {
+                    "command": "editorScroll",
+                    "args": {
+                        "to": "down",
+                        "by": "line",
+                        "revealCursor": true,
+                        "value": 20
+                    },
+                },
+                {
+                    "command": "cursorMove",
+                    "args": {
+                        "to": "viewPortCenter"
+                    }
+                }
+            ]
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "runCommands",
+        "key": "pageup",
+        "args": {
+            "commands": [
+                {
+                    "command": "editorScroll",
+                    "args": {
+                        "to": "up",
+                        "by": "line",
+                        "revealCursor": true,
+                        "value": 20
+                    },
+                },
+                {
+                    "command": "cursorMove",
+                    "args": {
+                        "to": "viewPortCenter"
+                    }
+                }
+            ]
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "shift+f",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+ctrl+shift+j",
+        "command": "workbench.action.previousEditor",
+        "when": "!terminalFocus && !panelFocus"
+    },
+    {
+        "key": "alt+ctrl+shift+k",
+        "command": "workbench.action.nextEditor",
+        "when": "!terminalFocus && !panelFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "notebook.cell.moveDown",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "notebook.cell.moveUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+5",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.terminal.splitActiveTab",
+        "when": "terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+shift+5",
+        "command": "-workbench.action.terminal.splitActiveTab",
+        "when": "terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill"
+    },
+]
