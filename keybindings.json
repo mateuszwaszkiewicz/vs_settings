@@ -99,11 +99,11 @@
         "when": "editorTextFocus && !isInEmbeddedEditor && editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
     },
     {
-        "key": "alt+ctrl+up",
+        "key": "ctrl+alt+pageup ctrl+alt+pagedown",
         "command": "workbench.action.moveEditorToNextGroup"
     },
     {
-        "key": "alt+ctrl+down",
+        "key": "ctrl+shift+h",
         "command": "workbench.action.moveEditorToPreviousGroup"
     },
     {
@@ -311,13 +311,11 @@
         "when": "!editorFocus"
     },
     {
-        "key": "alt+s",
-        "command": "notebook.cell.split",
-        "when": "editorTextFocus && notebookCellEditable && notebookEditable && notebookEditorFocused && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.moveEditorToNextGroup"
     },
     {
-        "key": "ctrl+k ctrl+shift+\\",
-        "command": "-notebook.cell.split",
-        "when": "editorTextFocus && notebookCellEditable && notebookEditable && notebookEditorFocused"
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
     }
 ]
