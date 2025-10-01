@@ -273,7 +273,7 @@
         "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
     },
     {
-        "key": "shift+down",
+        "key": "alt+down",
         "command": "jupyter.moveCellsUp",
         "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
     },
@@ -319,5 +319,5 @@
         "key": "ctrl+k ctrl+shift+\\",
         "command": "-notebook.cell.split",
         "when": "editorTextFocus && notebookCellEditable && notebookEditable && notebookEditorFocused"
-    },
+    }
 ]
